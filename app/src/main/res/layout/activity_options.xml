@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_height="70dp"
+        android:layout_width="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/back"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="@font/albionic"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:fontFamily="@font/albionic"
+        android:text="@string/music"
+        android:id="@+id/musicSwitchText"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingVertical="20dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/soundsSwitchText"
+        app:layout_constraintTop_toTopOf="@id/musicSwitchText"
+        app:layout_constraintBottom_toBottomOf="@id/musicSwitchText"
+        android:id="@+id/musicSwitch"
+        android:layout_marginStart="50dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:fontFamily="@font/albionic"
+        android:text="@string/sounds"
+        android:id="@+id/soundsSwitchText"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="@id/musicSwitchText"
+        android:paddingVertical="20dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/soundsSwitchText"
+        app:layout_constraintTop_toTopOf="@id/soundsSwitchText"
+        app:layout_constraintBottom_toBottomOf="@id/soundsSwitchText"
+        android:id="@+id/soundsSwitch"
+        android:layout_marginStart="50dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
