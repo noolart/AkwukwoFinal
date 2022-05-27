@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
         android:fontFamily="@font/albionic"
-        android:text="@string/hot_sit"
+        android:text="@string/hotseat"
         android:id="@+id/multiplayer"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
